@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Enter First Number  <input type="text" id="num1">
+    Enter Second Number <input type="tex" id="num2">
+    <button onclick="display()">SUBMIT</button>
+    
+    
+    <!-- display value in a textbox -->
+    <input type="text" id="num3">
+    <p id="num4"></p>
+    
+</body>
+<script>
+    function display()
+    {
+        var a=Number(document.getElementById("num1").value);
+         b=Number(document.getElementById("num2").value);
+        // alert(a+b);
+        document.getElementById("num3").value=a+b;
+        document.getElementById("num4").innerHTML=a+b;//tags
+
+    }
+</script>
+</html>
